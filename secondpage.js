@@ -9,11 +9,11 @@ $(document).ready(function(){
              var count=0;
                for(var i in data){
                  
-                     output+="<div class='card' style='width: 18rem;padding: 35px;'><table><tr><td>"+data[i].id+"</td><td></td>";
-                     output+="<td>"+data[i].title+"</td>";
-                     output+="<td></td><td><input type='checkbox' id='ck';'"+i+"/></td>";
+                     output+=" <div class='card text-white bg-primary mb-3' style='max-width: 18rem;'> <div class='card-header'>"+data[i].id+"</div>";
+                     output+="<div class='card-body'><h5 class='card-title'>"+data[i].title+"</h5>";
+                     output+="<p class='card-text'><input type='checkbox' id='ck';'"+i+"/></p>";
                      
-                     output+= "</tr></table></div><br>";
+                     output+= "</div><br><br>";
               
                }
            $("#result").html(output);
@@ -57,4 +57,9 @@ $(document).ready(function(){
 
 
 
-    
+{/* <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card-header">Header</div>
+<div class="card-body">
+  <h5 class="card-title">Primary card title</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div> */}
